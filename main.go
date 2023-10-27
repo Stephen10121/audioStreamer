@@ -45,7 +45,7 @@ func audioInfo(fileSource string) (audioData, error) {
 func main() {
 	// configure the songs directory name and port
 	const songsDir = "server"
-	const port = 8080
+	const port = 3001
 
 	http.HandleFunc("/songData/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
